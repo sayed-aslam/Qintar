@@ -1,0 +1,63 @@
+
+  @font-face {
+    font-family: "CrimsonPro";
+    src: url('../src/fonts/CrimsonPro-LightItalic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "CrimsonPro";
+   src: url('../src/fonts/CrimsonPro-Italic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "CrimsonPro";
+    src: url('../src/fonts/CrimsonPro-Light.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "CrimsonPro";
+     src:url('../src/fonts/CrimsonPro-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Mona-sans";
+     src: url('../src/fonts/Mona-Sans-Light.otf') format('otf');
+     font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: "Mona-sans";
+     src: url('../src/fonts/Mona-Sans-Regular.otf') format('otf'); 
+     font-weight: normal;
+     font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Mona-sans";
+     src:url('../src/fonts/Mona-Sans-SemiBold.otf') format('otf');
+     font-weight: normal;
+     font-style: normal;
+  }
+   
+  .body{
+    font-family: 'CrimsonPro', CrimsonPro-Regular;
+  }
+
+  .font-heading {
+    font-family: 'CrimsonPro', CrimsonPro-Regular;
+  }
+
+
+  .font-para {
+    font-family: 'CrimsonPro', CrimsonPro-Regular;  }
+
