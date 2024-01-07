@@ -14,7 +14,7 @@
 
 <body class="bg-very-light-gold relative">
 
-  <nav
+  <nav id="navbar"
     class="    h-6 flex justify-between items-center w-full px-12 mx-auto py-[32px] bg-[[#fefce8]/85 z-20 backdrop-blur-md  fixed top-0 left-0 right-0">
     <div>
 
@@ -26,7 +26,7 @@
         <li><a class='hover:text-black' href='about.html'>ABOUT US </a></li>
         <li><a class='hover:text-black' href='team.html'>TEAM</a></li>
         <li><a class='hover:text-black' href='investment.html'>INVESTMENT</a></li>
-        <li><a class='hover:text-black' href='contact.html'>CONTANT </a></li>
+        <li><a class='hover:text-black' href='contact.html'>CONTACT </a></li>
       </ul>
   </nav>
 
@@ -58,7 +58,7 @@
   <section class="px-16 py-12">
     <div class="w-full flex flex-row px-9 py-6 border-y border-[#c0942d]">
       <div class="w-2/6">
-        <img class="h-96 p-3 pt rounded-3xl " src="./src/img/goldsacks.jpg" alt="">
+        <img class="h-96 p-3 pt rounded-3xl " src="./src/img/mining.jpg" alt="">
       </div>
       <div class="w-4/6 py-6">
         <h2 class="text-[#371f11] text-4xl font-semibold ">
@@ -278,32 +278,33 @@
 
 
   <!-- Foooter -->
-  <section style="background-image: url('./src/img/homeBG.jpg'); background-size: cover;">>
+  <section style="background-image: url('./src/img/homeBG.jpg'); background-size: cover;">
+    <div class="overlay"></div>
     <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
       <nav class="flex flex-wrap justify-center -mx-5 -my-2">
         <div class="px-5 py-2">
-          <a href="index.html" class="text-base leading-6  text-amber-900 hover:text-amber-700">
+          <a href="index.html" class="font-semibold text-lg leading-6  text-amber-900 hover:text-amber-700">
             Home
           </a>
         </div>
         <div class="px-5 py-2">
-          <a href="about.html" class="text-lg leading-6  text-amber-900 hover:text-amber-700">
+          <a href="about.html" class="font-semibold text-lg leading-6  text-amber-900 hover:text-amber-700">
             About
           </a>
         </div>
 
         <div class="px-5 py-2">
-          <a href="team.html" class="text-lg leading-6  text-amber-900 hover:text-amber-700">
+          <a href="team.html" class="font-semibold text-lg leading-6  text-amber-900 hover:text-amber-700">
             Team
           </a>
         </div>
         <div class="px-5 py-2">
-          <a href="investment.html" class="text-lg leading-6  text-amber-900 hover:text-amber-700">
+          <a href="investment.html" class="font-semibold text-lg leading-6  text-amber-900 hover:text-amber-700">
             Investment
           </a>
         </div>
         <div class="px-5 py-2">
-          <a href="contact.html" class="text-lg leading-6  text-amber-900 hover:text-amber-700">
+          <a href="contact.html" class="font-semibold text-lg leading-6  text-amber-900 hover:text-amber-700">
             Contact
           </a>
         </div>
@@ -336,6 +337,7 @@
     </div>
   </section>
   </footer>
+  <script src="./navbarScroll.js"></script>
 
 </body>
 

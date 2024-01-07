@@ -47,58 +47,32 @@
   font-style: normal;
 }
 
-/* .body {
-  font-family: "CrimsonPro", CrimsonPro-Regular;
-}
 
-.font-heading {
-  font-family: "CrimsonPro", CrimsonPro-Regular;
-}
-
-.font-para {
-  font-family: "CrimsonPro", CrimsonPro-Regular;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-} */
-
-
-
-/* @font-face { */
-/* font-family: 'ElMessiri'; */
-/* Font name for reference */
-/* src: url('./src/fonts/ElMessiri-Medium.ttf') format('ttf'), */
-/* Specify the path to your font files */
-/* url('fonts/yourfont.woff') format('woff'); */
-/* You can include other font formats (like .ttf, .otf) and variations if available */
-/* Example: url('fonts/yourfont.ttf') format('truetype'); */
-/* } */
 
 .header-item {
   font-family: 'ElMessiri', ElMessiri-Medium;
-  /* Use the imported font */
-}
 
-/* .text-gradient {
-  background: linear-gradient(45deg, #D5B757, #eaeaea);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 
-.text-gra {
-  background: linear-gradient(45deg, #eaeaea, #D5B757);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-} */
 .item {
   font-family: 'Playfair Display', serif;
 }
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(218, 165, 32);
+  /* Adjust the opacity (last value) to control darkness */
+}
+
+
+.bg-opacity-full {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* Full black background */
