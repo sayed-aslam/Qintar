@@ -70,18 +70,35 @@
 
 
 
-@font-face {
-  font-family: 'ElMessiri';
-  /* Font name for reference */
-  src: url('./src/fonts/ElMessiri-Medium.ttf') format('ttf'),
-    /* Specify the path to your font files */
-    /* url('fonts/yourfont.woff') format('woff'); */
-    /* You can include other font formats (like .ttf, .otf) and variations if available */
-    /* Example: url('fonts/yourfont.ttf') format('truetype'); */
-}
+/* @font-face { */
+/* font-family: 'ElMessiri'; */
+/* Font name for reference */
+/* src: url('./src/fonts/ElMessiri-Medium.ttf') format('ttf'), */
+/* Specify the path to your font files */
+/* url('fonts/yourfont.woff') format('woff'); */
+/* You can include other font formats (like .ttf, .otf) and variations if available */
+/* Example: url('fonts/yourfont.ttf') format('truetype'); */
+/* } */
 
-/* Apply the imported font to elements */
 .header-item {
   font-family: 'ElMessiri', ElMessiri-Medium;
   /* Use the imported font */
+}
+
+/* .text-gradient {
+  background: linear-gradient(45deg, #D5B757, #eaeaea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.text-gra {
+  background: linear-gradient(45deg, #eaeaea, #D5B757);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+} */
+.item {
+  font-family: 'Playfair Display', serif;
 }
