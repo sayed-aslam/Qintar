@@ -25,20 +25,36 @@
 
 
   <nav
-    class="   w-6 h-6 flex justify-between items-center w-full px-12 mx-auto py-[32px] bg-[[#fefce8]/85 z-20 backdrop-blur-md  fixed top-0 left-0 right-0">
+    class="w-full px-4 py-6 bg-yellow-200 fixed top-0 left-0 right-0 z-20 backdrop-blur-md flex justify-between items-center">
     <div>
-
-      <img class="h-32 py-6" src="./src/img/logo f.png">
+      <img class="h-12" src="./src/img/logo f.png" alt="Logo">
     </div>
-    <div class="px-4">
-      <ul class='flex text-[#D5B757]  font-semibold text-xs gap-[3vw] ml-6   '>
-        <li> <a class='hover:text-amber-900' href='index.html'>HOME </a></li>
-        <li><a class='hover:text-amber-900' href='about.html'>ABOUT </a></li>
-        <li><a class='hover:text-amber-900' href='team.html'>TEAM</a></li>
-        <li><a class='hover:text-amber-900' href='investment.html'>INVESTMENT</a></li>
-        <li><a class='hover:text-amber-900' href='contact.html'>CONTACT </a></li>
-      </ul>
+
+    <!-- Navbar Toggle Button for Mobile -->
+    <button id="navbarToggle" class="md:hidden text-xl text-gray-600 focus:outline-none">
+      ☰
+    </button>
+
+    <!-- Mobile Navbar Links (initially hidden) -->
+    <div id="navbarLinks"
+      class="hidden md:flex md:items-center md:space-x-4 text-[#D5B757] font-semibold text-xs md:ml-6">
+      <a class="block py-2 hover:text-amber-900" href="index.html">HOME</a>
+      <a class="block py-2 hover:text-amber-900" href="about.html">ABOUT</a>
+      <a class="block py-2 hover:text-amber-900" href="team.html">TEAM</a>
+      <a class="block py-2 hover:text-amber-900" href="investment.html">INVESTMENT</a>
+      <a class="block py-2 hover:text-amber-900" href="contact.html">CONTACT</a>
+    </div>
   </nav>
+
+  <!-- Your page content here -->
+
+  <script>
+    // Toggle mobile navbar links visibility and hide toggle icon
+    document.getElementById('navbarToggle').addEventListener('click', function () {
+      document.getElementById('navbarLinks').classList.toggle('hidden');
+      document.getElementById('navbarToggle').style.display = 'none';
+    });
+  </script>
   <section class="flex h-full w-full flex-col">
     <div class="flex flex-col md:flex-row items-center py-9">
       <div class="w-full px-3 md:w-4/12 flex md:justify-center m-3 md:m-6">
