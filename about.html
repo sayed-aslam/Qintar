@@ -24,27 +24,57 @@
 <body class="text-[#371f11] w-screen relative">
 
 
-  <nav
-    class="w-full px-4 py-6 bg-yellow-200 fixed top-0 left-0 right-0 z-20 backdrop-blur-md flex justify-between items-center">
-    <div>
-      <img class="h-12" src="./src/img/logo f.png" alt="Logo">
-    </div>
-
-    <!-- Navbar Toggle Button for Mobile -->
-    <button id="navbarToggle" class="md:hidden text-xl text-gray-600 focus:outline-none">
-      ☰
-    </button>
-
-    <!-- Mobile Navbar Links (initially hidden) -->
-    <div id="navbarLinks"
-      class="hidden md:flex md:items-center md:space-x-4 text-[#D5B757] font-semibold text-xs md:ml-6">
-      <a class="block py-2 hover:text-amber-900" href="index.html">HOME</a>
-      <a class="block py-2 hover:text-amber-900" href="about.html">ABOUT</a>
-      <a class="block py-2 hover:text-amber-900" href="team.html">TEAM</a>
-      <a class="block py-2 hover:text-amber-900" href="investment.html">INVESTMENT</a>
-      <a class="block py-2 hover:text-amber-900" href="contact.html">CONTACT</a>
-    </div>
-  </nav>
+  <nav 
+  x-data="{ open: false }"
+  id="navbar"
+  class=" z-20 backdrop-blur-md w-full px-12 mx-auto py-[32px] 
+  fixed top-0 left-0 right-0 "
+  >
+         <div class="h-6 flex justify-between items-center ">
+          <div class="container mx-auto flex justify-between items-center p-4">
+         
+            <div>
+              <img class="h-32 py-6" src="./src/img/logo f.png">
+            </div>
+            <button @click="open = !open" class="md:hidden text-[#c0942d]">
+              <div class="w-6 h-6 relative">
+                <svg x-show="!open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+      
+                <svg x-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </div>
+            </button>
+            <div class="hidden md:flex px-4">
+              <ul class='flex text-amber-900  font-semibold text-xs gap-[3vw] ml-6   '>
+                <li><a class='hover:text-amber-700' href=' index.html'>HOME </a></li>
+                <li><a class='hover:text-amber-700' href='about.html'>ABOUT </a></li>
+                <li><a class='hover:text-amber-700' href='team.html'>TEAM</a></li>
+                <li><a class='hover:text-amber-700' href='investment.html'>INVESTMENT</a></li>
+                <li><a class='hover:text-amber-700' href='contact.html'>CONTACT </a></li>
+              </ul>
+            </div>
+           </div>
+         </div>
+         
+     
+      <div x-show="open" x-transition:enter="transform ease-out duration-300 transition-translate-opacity"
+      x-transition:enter-start="translate-y-10 opacity-0" x-transition:enter-end="translate-y-0 opacity-100"
+      x-transition:leave="transform ease-in duration-300 transition-translate-opacity"
+      x-transition:leave-start="translate-y-0 opacity-100" x-transition:leave-end="translate-y-10 opacity-0"
+      class="md:hidden">
+        <ul class=' text-amber-900   p-4 pt-12 pl-16   '>
+          <li class="py-3"><a class='hover:text-amber-700' href=' index.html'>HOME </a></li>
+          <li class="py-3"><a class='hover:text-amber-700' href='about.html'>ABOUT </a></li>
+          <li class="py-3"><a class='hover:text-amber-700' href='team.html'>TEAM</a></li>
+          <li class="py-3"><a class='hover:text-amber-700' href='investment.html'>INVESTMENT</a></li>
+          <li class="py-3"><a class='hover:text-amber-700' href='contact.html'>CONTACT </a></li>
+        </ul>
+      </div>
+</nav>
 
   <!-- Your page content here -->
 
