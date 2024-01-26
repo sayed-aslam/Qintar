@@ -8,6 +8,7 @@
   <link href="/dist/output.css" rel="stylesheet" />
   <!-- <link href="/src/input.css" rel="stylesheet"> -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,6 +25,7 @@
 <body class="text-[#371f11] w-screen relative">
 
 
+<<<<<<< HEAD
   <nav id="navbar"
     class="    h-6 flex justify-between items-center w-full px-12 mx-auto py-[32px] bg-[[#fefce8]/85 z-20 backdrop-blur-md  fixed top-0 left-0 right-0">
     <div>
@@ -39,6 +41,64 @@
       </ul>
   </nav>
   <section class="flex h-full w-full flex-col">
+=======
+  <nav 
+  x-data="{ open: false }"
+  id="navbar"
+  class=" z-20 backdrop-blur-md w-full px-12 mx-auto py-[32px] 
+  fixed top-0 left-0 right-0 "
+  >
+         <div class="h-6 flex justify-between items-center ">
+          <div class="container mx-auto flex justify-between items-center p-4">
+         
+            <div>
+              <img class="h-32 py-6" src="./src/img/logo f.png">
+            </div>
+            <button @click="open = !open" class="md:hidden text-[#c0942d]">
+              <div class="w-6 h-6 relative">
+                <svg x-show="!open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+      
+                <svg x-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </div>
+            </button>
+            <div class="hidden md:flex px-4">
+              <ul class='flex text-amber-900  font-semibold text-xs gap-[3vw] ml-6   '>
+                <li><a class='hover:text-amber-700' href=' index.html'>HOME </a></li>
+                <li><a class='hover:text-amber-700' href='about.html'>ABOUT </a></li>
+                <li><a class='hover:text-amber-700' href='team.html'>TEAM</a></li>
+                <li><a class='hover:text-amber-700' href='investment.html'>INVESTMENT</a></li>
+                <li><a class='hover:text-amber-700' href='contact.html'>CONTACT </a></li>
+              </ul>
+            </div>
+           </div>
+         </div>
+         
+     
+      <div x-show="open" x-transition:enter="transform ease-out duration-300 transition-translate-opacity"
+      x-transition:enter-start="translate-y-10 opacity-0" x-transition:enter-end="translate-y-0 opacity-100"
+      x-transition:leave="transform ease-in duration-300 transition-translate-opacity"
+      x-transition:leave-start="translate-y-0 opacity-100" x-transition:leave-end="translate-y-10 opacity-0"
+      class="md:hidden  b w-full">
+        <ul class=' text-amber-900   p-4 pt-12 pl-16   '>
+          <li class="py-3"><a class='hover:text-amber-700' href=' index.html'>HOME </a></li>
+          <li class="py-3"><a class='hover:text-amber-700' href='about.html'>ABOUT </a></li>
+          <li class="py-3"><a class='hover:text-amber-700' href='team.html'>TEAM</a></li>
+          <li class="py-3"><a class='hover:text-amber-700' href='investment.html'>INVESTMENT</a></li>
+          <li class="py-3"><a class='hover:text-amber-700' href='contact.html'>CONTACT </a></li>
+        </ul>
+      </div>
+</nav>
+
+  <!-- Your page content here -->
+
+ 
+  <section class="flex h-full w-full flex-col pt-12 md:pt-3">
+>>>>>>> c191562e7f52ca0bcd2b08079d5926b2fbe7ca6c
     <div class="flex flex-col md:flex-row items-center py-9">
       <div class="w-full px-3 md:w-4/12 flex md:justify-center m-3 md:m-6">
         <h1 class="text-5xl md:text-6xl lg:text-7xl lg:text-8xl  p-3 pt-5 md:p-6 text-[#c0942d]  md:text-center">
