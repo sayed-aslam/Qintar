@@ -25,7 +25,7 @@
 <body class="text-[#371f11] w-screen relative">
 
 
-<<<<<<< HEAD
+
   <nav id="navbar"
     class="    h-6 flex justify-between items-center w-full px-12 mx-auto py-[32px] bg-[[#fefce8]/85 z-20 backdrop-blur-md  fixed top-0 left-0 right-0">
     <div>
@@ -41,49 +41,45 @@
       </ul>
   </nav>
   <section class="flex h-full w-full flex-col">
-=======
-  <nav 
-  x-data="{ open: false }"
-  id="navbar"
-  class=" z-20 backdrop-blur-md w-full px-12 mx-auto py-[32px] 
-  fixed top-0 left-0 right-0 "
-  >
-         <div class="h-6 flex justify-between items-center ">
-          <div class="container mx-auto flex justify-between items-center p-4">
-         
-            <div>
-              <img class="h-32 py-6" src="./src/img/logo f.png">
+
+    <nav x-data="{ open: false }" id="navbar" class=" z-20 backdrop-blur-md w-full px-12 mx-auto py-[32px] 
+  fixed top-0 left-0 right-0 ">
+      <div class="h-6 flex justify-between items-center ">
+        <div class="container mx-auto flex justify-between items-center p-4">
+
+          <div>
+            <img class="h-32 py-6" src="./src/img/logo f.png">
+          </div>
+          <button @click="open = !open" class="md:hidden text-[#c0942d]">
+            <div class="w-6 h-6 relative">
+              <svg x-show="!open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+
+              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
             </div>
-            <button @click="open = !open" class="md:hidden text-[#c0942d]">
-              <div class="w-6 h-6 relative">
-                <svg x-show="!open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-      
-                <svg x-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </div>
-            </button>
-            <div class="hidden md:flex px-4">
-              <ul class='flex text-amber-900  font-semibold text-xs gap-[3vw] ml-6   '>
-                <li><a class='hover:text-amber-700' href=' index.html'>HOME </a></li>
-                <li><a class='hover:text-amber-700' href='about.html'>ABOUT </a></li>
-                <li><a class='hover:text-amber-700' href='team.html'>TEAM</a></li>
-                <li><a class='hover:text-amber-700' href='investment.html'>INVESTMENT</a></li>
-                <li><a class='hover:text-amber-700' href='contact.html'>CONTACT </a></li>
-              </ul>
-            </div>
-           </div>
-         </div>
-         
-     
+          </button>
+          <div class="hidden md:flex px-4">
+            <ul class='flex text-amber-900  font-semibold text-xs gap-[3vw] ml-6   '>
+              <li><a class='hover:text-amber-700' href=' index.html'>HOME </a></li>
+              <li><a class='hover:text-amber-700' href='about.html'>ABOUT </a></li>
+              <li><a class='hover:text-amber-700' href='team.html'>TEAM</a></li>
+              <li><a class='hover:text-amber-700' href='investment.html'>INVESTMENT</a></li>
+              <li><a class='hover:text-amber-700' href='contact.html'>CONTACT </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
       <div x-show="open" x-transition:enter="transform ease-out duration-300 transition-translate-opacity"
-      x-transition:enter-start="translate-y-10 opacity-0" x-transition:enter-end="translate-y-0 opacity-100"
-      x-transition:leave="transform ease-in duration-300 transition-translate-opacity"
-      x-transition:leave-start="translate-y-0 opacity-100" x-transition:leave-end="translate-y-10 opacity-0"
-      class="md:hidden  b w-full">
+        x-transition:enter-start="translate-y-10 opacity-0" x-transition:enter-end="translate-y-0 opacity-100"
+        x-transition:leave="transform ease-in duration-300 transition-translate-opacity"
+        x-transition:leave-start="translate-y-0 opacity-100" x-transition:leave-end="translate-y-10 opacity-0"
+        class="md:hidden  b w-full">
         <ul class=' text-amber-900   p-4 pt-12 pl-16   '>
           <li class="py-3"><a class='hover:text-amber-700' href=' index.html'>HOME </a></li>
           <li class="py-3"><a class='hover:text-amber-700' href='about.html'>ABOUT </a></li>
@@ -92,329 +88,329 @@
           <li class="py-3"><a class='hover:text-amber-700' href='contact.html'>CONTACT </a></li>
         </ul>
       </div>
-</nav>
+    </nav>
 
-  <!-- Your page content here -->
+    <!-- Your page content here -->
 
- 
-  <section class="flex h-full w-full flex-col pt-12 md:pt-3">
->>>>>>> c191562e7f52ca0bcd2b08079d5926b2fbe7ca6c
-    <div class="flex flex-col md:flex-row items-center py-9">
-      <div class="w-full px-3 md:w-4/12 flex md:justify-center m-3 md:m-6">
-        <h1 class="text-5xl md:text-6xl lg:text-7xl lg:text-8xl  p-3 pt-5 md:p-6 text-[#c0942d]  md:text-center">
-          Why <br />
-          Qintar?
-        </h1>
-      </div>
-      <div class="w-full md:w-8/12 flex justify-center md:m-6">
-        <p class="md:pr-6 md:mr-7 mx-2 px-3 text-lg  md:text-xl md:leading-9 ">
-          Qintar Private Equity is a Qintar Private Equity is a distinguished
-          asset management company that has firmly established itself in the
-          past 10 years as a trusted partner for high-net-worth individuals
-          seeking to optimize their investment portfolios. With a robust
-          foundation built on a decade of unparalleled expertise, Qintar has
-          garnered a reputation for delivering exceptional investment
-          management services tailored to meet the unique financial goals and
-          aspirations of our esteemed clientele.
-        </p>
-      </div>
-    </div>
 
-    <div class="flex items-center justify-center mx-2 sm:mx-3 md:mx-6 lg:mx-9 xl:mx-16 flex-col">
-      <div class="flex flex-col  md:flex-row w-4/5 items-start md:items-center py-6">
-        <div
-          class="w-24 md:w-2/12 bg-white mb-3 md:mb-1 p-2 md:p-6 text-center rounded-2xl md:rounded-3xl border-[#c0942d] border">
-          <img src="./src/img/globe-removebg-preview.png" class="">
+    <section class="flex h-full w-full flex-col pt-12 md:pt-3">
+      >>>>>>> c191562e7f52ca0bcd2b08079d5926b2fbe7ca6c
+      <div class="flex flex-col md:flex-row items-center py-9">
+        <div class="w-full px-3 md:w-4/12 flex md:justify-center m-3 md:m-6">
+          <h1 class="text-5xl md:text-6xl lg:text-7xl lg:text-8xl  p-3 pt-5 md:p-6 text-[#c0942d]  md:text-center">
+            Why <br />
+            Qintar?
+          </h1>
         </div>
-        <div class="w-full md:w-10/12 ml-1 md:ml-12">
-          <h2 class="text-[#371f11] text-2xl md:text-3xl font-semibold py-4">
-            Establishment
-          </h2>
-          <div class="border-b-2 w-64 border-[#c0942d] rounded-3xl"></div>
-          <p class="py-3 md:py-6 text-lg md:text-xl">
-            Founded a decade ago, Qintar Private Equity has since been
-            dedicated to providing expert fund management services to
-            high-net-worth individuals.
+        <div class="w-full md:w-8/12 flex justify-center md:m-6">
+          <p class="md:pr-6 md:mr-7 mx-2 px-3 text-lg  md:text-xl md:leading-9 ">
+            Qintar Private Equity is a Qintar Private Equity is a distinguished
+            asset management company that has firmly established itself in the
+            past 10 years as a trusted partner for high-net-worth individuals
+            seeking to optimize their investment portfolios. With a robust
+            foundation built on a decade of unparalleled expertise, Qintar has
+            garnered a reputation for delivering exceptional investment
+            management services tailored to meet the unique financial goals and
+            aspirations of our esteemed clientele.
           </p>
         </div>
       </div>
-      <div class="flex flex-col  md:flex-row w-4/5 items-start md:items-center py-3 md:py-6">
-        <div
-          class="w-24 md:w-2/12 bg-white mb-3 md:mb-1 p-2 md:p-6 text-center rounded-2xl md:rounded-3xl border-[#c0942d] border">
-          <img src="./src/img/money-removebg-preview.png">
-        </div>
-        <div class="w-full md:w-10/12 ml-1 md:ml-12">
-          <h2 class="text-[#371f11] text-2xl md:text-3xl font-semibold py-4">
-            AUM (Assets Under Management)
-          </h2>
-          <div class="border-b-2 w-64 border-[#c0942d] rounded-3xl"></div>
-          <p class="py-3 md:py-6 text-lg md:text-xl">
-            Currently boasting an impressive portfolio with assets totaling
-            1.453 billion dollars, Qintar continues to leverage this financial
-            strength to drive sound investments and deliver substantial
-            returns.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-col  md:flex-row w-4/5 items-start md:items-center py-3 md:py-6">
-        <div
-          class="w-24 md:w-2/12 bg-white mb-3 md:mb-1 p-2 md:p-6 text-center rounded-2xl md:rounded-3xl border-[#c0942d] border">
-          <img src="./src/img/acheviement-removebg-preview.png">
-        </div>
-        <div class="w-full md:w-10/12 ml-1 md:ml-12">
-          <h2 class="text-[#371f11] text-2xl md:text-3xl font-semibold py-4">
-            Geographic Reach
-          </h2>
-          <div class="border-b-2 w-64 border-[#c0942d] rounded-3xl"></div>
-          <p class="py-3 md:py-6 text-lg md:text-xl">
-            Our global reach extends across regions, with a significant
-            clientele hailing from diverse locales, notably Qatar, India, and
-            the United Arab Emirates (UAE). This widespread presence
-            underscores our ability to navigate international markets and
-            cater to the distinct financial landscapes of various countries.
-          </p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Competency Section starts -->
-    <div class="flex flex-col py-9">
-      <h1 class=" text-3xl md:text-5xl font-bold text-center pb-12">Core Competencies</h1>
-      <div class="flex flex-col md:flex-row mx-2 md:mx-16">
-        <div class="flex h-min w-full md:w-1/3">
-          <div class="mx-3 md:mx-6 bg-white/40 rounded-[32px] border border-[#c0942d]/60 hover:bg-white p-3">
-            <h2 class="text-[#c0942d] text-xl md:text-2xl font-bold mx-3 md:ms-9 py-3 md:py-4">
-              Expertise
+      <div class="flex items-center justify-center mx-2 sm:mx-3 md:mx-6 lg:mx-9 xl:mx-16 flex-col">
+        <div class="flex flex-col  md:flex-row w-4/5 items-start md:items-center py-6">
+          <div
+            class="w-24 md:w-2/12 bg-white mb-3 md:mb-1 p-2 md:p-6 text-center rounded-2xl md:rounded-3xl border-[#c0942d] border">
+            <img src="./src/img/globe-removebg-preview.png" class="">
+          </div>
+          <div class="w-full md:w-10/12 ml-1 md:ml-12">
+            <h2 class="text-[#371f11] text-2xl md:text-3xl font-semibold py-4">
+              Establishment
             </h2>
-            <p class="text-md md:text-lg mx-3 md:mx-6 pb-4">
-              With a decade of experience, Qintar's seasoned team of
-              investment professionals possesses the knowledge and acumen
-              needed to craft effective investment strategies that align with
-              each client's financial objectives.
+            <div class="border-b-2 w-64 border-[#c0942d] rounded-3xl"></div>
+            <p class="py-3 md:py-6 text-lg md:text-xl">
+              Founded a decade ago, Qintar Private Equity has since been
+              dedicated to providing expert fund management services to
+              high-net-worth individuals.
             </p>
           </div>
         </div>
-        <div class="flex h-min w-full md:w-1/3 py-4 md:pt-16">
-          <div class="mx-3 md:mx-6 bg-white/40 rounded-[32px] border border-[#c0942d]/60 hover:bg-white p-3">
-            <h2 class="text-[#c0942d] text-xl md:text-2xl font-bold mx-3 md:ms-9 py-3 md:py-4">
-              Tailored Solutions
+        <div class="flex flex-col  md:flex-row w-4/5 items-start md:items-center py-3 md:py-6">
+          <div
+            class="w-24 md:w-2/12 bg-white mb-3 md:mb-1 p-2 md:p-6 text-center rounded-2xl md:rounded-3xl border-[#c0942d] border">
+            <img src="./src/img/money-removebg-preview.png">
+          </div>
+          <div class="w-full md:w-10/12 ml-1 md:ml-12">
+            <h2 class="text-[#371f11] text-2xl md:text-3xl font-semibold py-4">
+              AUM (Assets Under Management)
             </h2>
-            <p class="text-md md:text-lg mx-3 md:mx-6 pb-4">
-              Qintar Private Equity believes in personalized, client-centric
-              approaches. We work closely with our clients to understand their
-              unique financial circumstances, risk tolerance, and long-term
-              goals, enabling us to design bespoke investment plans that
-              optimize growth and mitigate risks.
+            <div class="border-b-2 w-64 border-[#c0942d] rounded-3xl"></div>
+            <p class="py-3 md:py-6 text-lg md:text-xl">
+              Currently boasting an impressive portfolio with assets totaling
+              1.453 billion dollars, Qintar continues to leverage this financial
+              strength to drive sound investments and deliver substantial
+              returns.
             </p>
           </div>
         </div>
-        <div class="flex h-min w-full md:w-1/3">
-          <div class="mx-3 md:mx-6 bg-white/40 rounded-[32px] border border-[#c0942d]/60 hover:bg-white p-3">
-            <h2 class="text-[#c0942d] text-xl md:text-2xl font-bold mx-3 md:ms-9 py-3 md:py-4">
-              Diversified Portfolios
+        <div class="flex flex-col  md:flex-row w-4/5 items-start md:items-center py-3 md:py-6">
+          <div
+            class="w-24 md:w-2/12 bg-white mb-3 md:mb-1 p-2 md:p-6 text-center rounded-2xl md:rounded-3xl border-[#c0942d] border">
+            <img src="./src/img/acheviement-removebg-preview.png">
+          </div>
+          <div class="w-full md:w-10/12 ml-1 md:ml-12">
+            <h2 class="text-[#371f11] text-2xl md:text-3xl font-semibold py-4">
+              Geographic Reach
             </h2>
-            <p class="text-md md:text-lg mx-3 md:mx-6 pb-4">
-              Recognizing the importance of diversification in investment, we
-              construct portfolios that encompass a wide range of asset
-              classes, ensuring a balanced approach that maximizes potential
-              returns while minimizing risk exposure.
+            <div class="border-b-2 w-64 border-[#c0942d] rounded-3xl"></div>
+            <p class="py-3 md:py-6 text-lg md:text-xl">
+              Our global reach extends across regions, with a significant
+              clientele hailing from diverse locales, notably Qatar, India, and
+              the United Arab Emirates (UAE). This widespread presence
+              underscores our ability to navigate international markets and
+              cater to the distinct financial landscapes of various countries.
             </p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Competency Section ends -->
 
-    <!-- Vision Section Starts -->
-    <div class="flex flex-col md:flex-row-reverse mx-3 md:mx-16 py-6 md:py-9 items-center">
-      <div class="flex w-fulll md:w-5/12 flex-col justify-center items-center px-6">
-        <h1 class="text-5xl md:text-6xl lg:text-7xl lg:text-8xl p-6 text-[#c0942d] font-tight">Vision</h1>
-        <div class="border-b-2 md:border-b-4 w-[240px] md:w-[320px] border-[#c0942d] rounded-3xl"></div>
-        <h4 class="text-2xl md:text-4xl font-thin p-6 leading-tight text-center">
-          Envisioning a Future of Prosperity and Positive Transformation
-        </h4>
+      <!-- Competency Section starts -->
+      <div class="flex flex-col py-9">
+        <h1 class=" text-3xl md:text-5xl font-bold text-center pb-12">Core Competencies</h1>
+        <div class="flex flex-col md:flex-row mx-2 md:mx-16">
+          <div class="flex h-min w-full md:w-1/3">
+            <div class="mx-3 md:mx-6 bg-white/40 rounded-[32px] border border-[#c0942d]/60 hover:bg-white p-3">
+              <h2 class="text-[#c0942d] text-xl md:text-2xl font-bold mx-3 md:ms-9 py-3 md:py-4">
+                Expertise
+              </h2>
+              <p class="text-md md:text-lg mx-3 md:mx-6 pb-4">
+                With a decade of experience, Qintar's seasoned team of
+                investment professionals possesses the knowledge and acumen
+                needed to craft effective investment strategies that align with
+                each client's financial objectives.
+              </p>
+            </div>
+          </div>
+          <div class="flex h-min w-full md:w-1/3 py-4 md:pt-16">
+            <div class="mx-3 md:mx-6 bg-white/40 rounded-[32px] border border-[#c0942d]/60 hover:bg-white p-3">
+              <h2 class="text-[#c0942d] text-xl md:text-2xl font-bold mx-3 md:ms-9 py-3 md:py-4">
+                Tailored Solutions
+              </h2>
+              <p class="text-md md:text-lg mx-3 md:mx-6 pb-4">
+                Qintar Private Equity believes in personalized, client-centric
+                approaches. We work closely with our clients to understand their
+                unique financial circumstances, risk tolerance, and long-term
+                goals, enabling us to design bespoke investment plans that
+                optimize growth and mitigate risks.
+              </p>
+            </div>
+          </div>
+          <div class="flex h-min w-full md:w-1/3">
+            <div class="mx-3 md:mx-6 bg-white/40 rounded-[32px] border border-[#c0942d]/60 hover:bg-white p-3">
+              <h2 class="text-[#c0942d] text-xl md:text-2xl font-bold mx-3 md:ms-9 py-3 md:py-4">
+                Diversified Portfolios
+              </h2>
+              <p class="text-md md:text-lg mx-3 md:mx-6 pb-4">
+                Recognizing the importance of diversification in investment, we
+                construct portfolios that encompass a wide range of asset
+                classes, ensuring a balanced approach that maximizes potential
+                returns while minimizing risk exposure.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="flex flex-col w-full md:w-7/12 p-3 md:p-6">
-        <p class="text-md md:text-lg py-2 md:py-3">
-          Qintar is committed to a vision of a society where opportunities and
-          prosperity are accessible to all, irrespective of background or
-          circumstance. The organization seeks to bridge socio-economic gaps
-          by promoting inclusivity, supporting education, healthcare, and
-          other initiatives that empower marginalized communities and foster a
-          more equitable world. At Qintar Private Equity, we stand by our
-          values of integrity, innovation, and reliability, committed to
-          delivering superior results that ensure the financial prosperity of
-          our esteemed clients.
+      <!-- Competency Section ends -->
+
+      <!-- Vision Section Starts -->
+      <div class="flex flex-col md:flex-row-reverse mx-3 md:mx-16 py-6 md:py-9 items-center">
+        <div class="flex w-fulll md:w-5/12 flex-col justify-center items-center px-6">
+          <h1 class="text-5xl md:text-6xl lg:text-7xl lg:text-8xl p-6 text-[#c0942d] font-tight">Vision</h1>
+          <div class="border-b-2 md:border-b-4 w-[240px] md:w-[320px] border-[#c0942d] rounded-3xl"></div>
+          <h4 class="text-2xl md:text-4xl font-thin p-6 leading-tight text-center">
+            Envisioning a Future of Prosperity and Positive Transformation
+          </h4>
+        </div>
+        <div class="flex flex-col w-full md:w-7/12 p-3 md:p-6">
+          <p class="text-md md:text-lg py-2 md:py-3">
+            Qintar is committed to a vision of a society where opportunities and
+            prosperity are accessible to all, irrespective of background or
+            circumstance. The organization seeks to bridge socio-economic gaps
+            by promoting inclusivity, supporting education, healthcare, and
+            other initiatives that empower marginalized communities and foster a
+            more equitable world. At Qintar Private Equity, we stand by our
+            values of integrity, innovation, and reliability, committed to
+            delivering superior results that ensure the financial prosperity of
+            our esteemed clients.
+          </p>
+          <p class="text-md md:text-lg py-2 md:py-3">
+            Qintar Private Equity is dedicated to being the preferred choice for
+            high-net-worth individuals seeking sophisticated investment
+            management. We envision a future where our expertise and commitment
+            empower our clients to attain their financial aspirations and thrive
+            in an ever-evolving global economic landscape. Qintar aspires to be
+            a catalyst for sustainable growth, leveraging its investments to
+            promote responsible practices across all industries it engages with.
+            Our idea of economic progress is intrinsically linked to
+            environmental preservation, ensuring a sustainable and harmonious
+            balance for future generations.
+          </p>
+        </div>
+      </div>
+      <!-- Vision Section Ends -->
+
+      <!-- Values Sections starts -->
+      <div class="flex flex-col md:flex-row items-center justify-center py-9 mx-3 md:mx-16">
+        <div class="flex w-full  md:w-5/12 flex-col text-center">
+          <h1 class="text-5xl md:text-6xl lg:text-7xl lg:text-8xl p-6 text-[#c0942d] font-semibold">
+            Our <br />
+            Values
+          </h1>
+          <img class="px-2 md:pl-9 md:pr-12 py-3 md:py-6" src="./src/img/OVImg.jpg" alt="" />
+        </div>
+        <div class="flex w-full md:w-7/12 px-3 flex-col">
+          <div class="flex flex-col py-2 md:py-3 border-b border-[#c0942d]">
+            <h3 class="text-[#371f11] text-2xl md:text-3xl font-semibold pb-2 md:pb-4">
+              Integrity
+            </h3>
+            <p class="pb-2">
+              Founded a decade ago, Qintar Private Equity has since been
+              dedicated to providing expert fund management services to
+              high-net-worth individuals.
+            </p>
+          </div>
+          <div class="flex flex-col py-2 md:py-3 my-3 border-b border-[#c0942d]">
+            <h3 class="text-[#371f11] text-2xl md:text-3xl font-semibold pb-2 md:pb-4">
+              Client-Centric Approach
+            </h3>
+            <p class="pb-2">
+              Clients are at the center of Qintar's operations. The organization
+              places great importance on understanding and meeting clients'
+              needs, tailoring solutions, and delivering exceptional services.
+              Client satisfaction and success are considered the true indicators
+              of Qintar's effectiveness and value.
+            </p>
+          </div>
+          <div class="flex flex-col py-2 md:py-3 my-3 border-b border-[#c0942d]">
+            <h3 class="text-[#371f11] text-2xl md:text-3xl font-semibold pb-2 md:pb-4">
+              Adaptability
+            </h3>
+            <p class="pb-2">
+              In the ever-evolving world of finance and investment, adaptability
+              is key to success. Qintar embraces change and stays flexible,
+              readily adjusting to new market dynamics, technological
+              advancements, and emerging trends, ensuring it remains at the
+              forefront of the industry.
+            </p>
+          </div>
+          <div class="flex flex-col py-2 md:py-3 my-3 border-b border-[#c0942d]">
+            <h3 class="text-[#371f11] text-2xl md:text-3xl font-semibold pb-2 md:pb-4">
+              Sustainability
+            </h3>
+            <p class="pb-2">
+              Qintar is committed to sustainability in all aspects of its
+              operations. This involves making long-term decisions that balance
+              economic growth with environmental responsibility, ensuring a
+              sustainable future for both the organization and the communities
+              it serves.
+            </p>
+          </div>
+          <div class="flex flex-col py-2 md:py-3 my-3">
+            <h3 class="text-[#371f11] text-2xl md:text-3xl font-semibold pb-2 md:pb-4">Trust</h3>
+            <p class="pb-2">
+              Trust is the bedrock of Qintar's relationships. The organization
+              strives to build and maintain trust with clients, partners, and
+              stakeholders through transparency, reliability, and consistent
+              delivery of promises. Trust forms the basis of enduring and
+              successful collaborations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Values Section Ends -->
+
+      <!-- Clientele Section Starts -->
+      <div class="flex flex-col md:flex-row py-6 md:py-9 mx-3 md:mx-16 items-center justify-center">
+        <img class=" px-12" src="./src/img/logo only.png" alt="qintar logo" />
+        <div class="flex flex-col m-6 md:m-9 w-full md:w-1/2">
+          <h2 class="text-3xl md:text-4xl font-bold py-5">Clientele</h2>
+          <p class="text-md md:text-lg py-2 md:py-3">
+            High-Net-Worth Individuals: Qintar Private Equity has had the
+            privilege of managing funds for discerning high-net-worth
+            individuals who entrust us with their wealth. Our commitment to
+            transparency, professionalism, and excellence in service has
+            fostered lasting partnerships built on mutual trust and shared
+            success.
+          </p>
+        </div>
+      </div>
+      <!-- Clientele Section ends -->
+    </section>
+
+
+    <!-- Foooter -->
+    <section style="background-image: url('./src/img/homeBG.jpg'); background-size: cover;">
+      <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <nav class="flex flex-row justify-center -mx-5 -my-2">
+          <div class="px-2 sm:px-3 md:px-5 py-2">
+            <a href="index.html"
+              class="font-semibold text-sm sm:text-md md:text-lg leading-6  text-amber-900 hover:text-amber-700">
+              HOME
+            </a>
+          </div>
+          <div class="px-2 sm:px-3 md:px-5 py-2">
+            <a href="about.html"
+              class="font-semibold text-sm sm:text-md md:text-lg leading-6  text-amber-900 hover:text-amber-700">
+              ABOUT
+            </a>
+          </div>
+
+          <div class="px-2 sm:px-3md:px-5 py-2">
+            <a href="team.html"
+              class="font-semibold text-sm sm:text-md md:text-lg leading-6  text-amber-900 hover:text-amber-700">
+              TEAM
+            </a>
+          </div>
+          <div class="px-2 sm:px-3 md:px-5 py-2">
+            <a href="investment.html"
+              class="font-semibold text-sm sm:text-md md:text-lg leading-6  text-amber-900 hover:text-amber-700">
+              INVESTMENT
+            </a>
+          </div>
+          <div class="px-2 sm:px-3 md:px-5 py-2">
+            <a href="contact.html"
+              class="font-semibold text-sm sm:text-md md:text-lg leading-6  text-amber-900 hover:text-amber-700">
+              CONTACT
+            </a>
+          </div>
+
+        </nav>
+        <div class="flex justify-center mt-8 space-x-6">
+          <a href="https://www.linkedin.com/in/qintar-private-equity-4746b6297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+            class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">linkedin_icon</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="18" width="16"
+              viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+            </svg>
+          </a>
+          <a href="contact.html" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">gmail</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+              viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+            </svg>
+          </a>
+
+        </div>
+        <p class="text-xs text-[#371f11] text-md leading-6 text-center ">
+          Copyrights
+          @ 2023 - 2024 QINTAR LTD. All rights reserved.
         </p>
-        <p class="text-md md:text-lg py-2 md:py-3">
-          Qintar Private Equity is dedicated to being the preferred choice for
-          high-net-worth individuals seeking sophisticated investment
-          management. We envision a future where our expertise and commitment
-          empower our clients to attain their financial aspirations and thrive
-          in an ever-evolving global economic landscape. Qintar aspires to be
-          a catalyst for sustainable growth, leveraging its investments to
-          promote responsible practices across all industries it engages with.
-          Our idea of economic progress is intrinsically linked to
-          environmental preservation, ensuring a sustainable and harmonious
-          balance for future generations.
-        </p>
       </div>
-    </div>
-    <!-- Vision Section Ends -->
-
-    <!-- Values Sections starts -->
-    <div class="flex flex-col md:flex-row items-center justify-center py-9 mx-3 md:mx-16">
-      <div class="flex w-full  md:w-5/12 flex-col text-center">
-        <h1 class="text-5xl md:text-6xl lg:text-7xl lg:text-8xl p-6 text-[#c0942d] font-semibold">
-          Our <br />
-          Values
-        </h1>
-        <img class="px-2 md:pl-9 md:pr-12 py-3 md:py-6" src="./src/img/OVImg.jpg" alt="" />
-      </div>
-      <div class="flex w-full md:w-7/12 px-3 flex-col">
-        <div class="flex flex-col py-2 md:py-3 border-b border-[#c0942d]">
-          <h3 class="text-[#371f11] text-2xl md:text-3xl font-semibold pb-2 md:pb-4">
-            Integrity
-          </h3>
-          <p class="pb-2">
-            Founded a decade ago, Qintar Private Equity has since been
-            dedicated to providing expert fund management services to
-            high-net-worth individuals.
-          </p>
-        </div>
-        <div class="flex flex-col py-2 md:py-3 my-3 border-b border-[#c0942d]">
-          <h3 class="text-[#371f11] text-2xl md:text-3xl font-semibold pb-2 md:pb-4">
-            Client-Centric Approach
-          </h3>
-          <p class="pb-2">
-            Clients are at the center of Qintar's operations. The organization
-            places great importance on understanding and meeting clients'
-            needs, tailoring solutions, and delivering exceptional services.
-            Client satisfaction and success are considered the true indicators
-            of Qintar's effectiveness and value.
-          </p>
-        </div>
-        <div class="flex flex-col py-2 md:py-3 my-3 border-b border-[#c0942d]">
-          <h3 class="text-[#371f11] text-2xl md:text-3xl font-semibold pb-2 md:pb-4">
-            Adaptability
-          </h3>
-          <p class="pb-2">
-            In the ever-evolving world of finance and investment, adaptability
-            is key to success. Qintar embraces change and stays flexible,
-            readily adjusting to new market dynamics, technological
-            advancements, and emerging trends, ensuring it remains at the
-            forefront of the industry.
-          </p>
-        </div>
-        <div class="flex flex-col py-2 md:py-3 my-3 border-b border-[#c0942d]">
-          <h3 class="text-[#371f11] text-2xl md:text-3xl font-semibold pb-2 md:pb-4">
-            Sustainability
-          </h3>
-          <p class="pb-2">
-            Qintar is committed to sustainability in all aspects of its
-            operations. This involves making long-term decisions that balance
-            economic growth with environmental responsibility, ensuring a
-            sustainable future for both the organization and the communities
-            it serves.
-          </p>
-        </div>
-        <div class="flex flex-col py-2 md:py-3 my-3">
-          <h3 class="text-[#371f11] text-2xl md:text-3xl font-semibold pb-2 md:pb-4">Trust</h3>
-          <p class="pb-2">
-            Trust is the bedrock of Qintar's relationships. The organization
-            strives to build and maintain trust with clients, partners, and
-            stakeholders through transparency, reliability, and consistent
-            delivery of promises. Trust forms the basis of enduring and
-            successful collaborations.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- Values Section Ends -->
-
-    <!-- Clientele Section Starts -->
-    <div class="flex flex-col md:flex-row py-6 md:py-9 mx-3 md:mx-16 items-center justify-center">
-      <img class=" px-12" src="./src/img/logo only.png" alt="qintar logo" />
-      <div class="flex flex-col m-6 md:m-9 w-full md:w-1/2">
-        <h2 class="text-3xl md:text-4xl font-bold py-5">Clientele</h2>
-        <p class="text-md md:text-lg py-2 md:py-3">
-          High-Net-Worth Individuals: Qintar Private Equity has had the
-          privilege of managing funds for discerning high-net-worth
-          individuals who entrust us with their wealth. Our commitment to
-          transparency, professionalism, and excellence in service has
-          fostered lasting partnerships built on mutual trust and shared
-          success.
-        </p>
-      </div>
-    </div>
-    <!-- Clientele Section ends -->
-  </section>
-
-
-  <!-- Foooter -->
-  <section style="background-image: url('./src/img/homeBG.jpg'); background-size: cover;">
-    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-      <nav class="flex flex-row justify-center -mx-5 -my-2">
-        <div class="px-2 sm:px-3 md:px-5 py-2">
-          <a href="index.html"
-            class="font-semibold text-sm sm:text-md md:text-lg leading-6  text-amber-900 hover:text-amber-700">
-            HOME
-          </a>
-        </div>
-        <div class="px-2 sm:px-3 md:px-5 py-2">
-          <a href="about.html"
-            class="font-semibold text-sm sm:text-md md:text-lg leading-6  text-amber-900 hover:text-amber-700">
-            ABOUT
-          </a>
-        </div>
-
-        <div class="px-2 sm:px-3md:px-5 py-2">
-          <a href="team.html"
-            class="font-semibold text-sm sm:text-md md:text-lg leading-6  text-amber-900 hover:text-amber-700">
-            TEAM
-          </a>
-        </div>
-        <div class="px-2 sm:px-3 md:px-5 py-2">
-          <a href="investment.html"
-            class="font-semibold text-sm sm:text-md md:text-lg leading-6  text-amber-900 hover:text-amber-700">
-            INVESTMENT
-          </a>
-        </div>
-        <div class="px-2 sm:px-3 md:px-5 py-2">
-          <a href="contact.html"
-            class="font-semibold text-sm sm:text-md md:text-lg leading-6  text-amber-900 hover:text-amber-700">
-            CONTACT
-          </a>
-        </div>
-
-      </nav>
-      <div class="flex justify-center mt-8 space-x-6">
-        <a href="https://www.linkedin.com/in/qintar-private-equity-4746b6297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
-          class="text-gray-400 hover:text-gray-500">
-          <span class="sr-only">linkedin_icon</span>
-          <svg xmlns="http://www.w3.org/2000/svg" height="18" width="16"
-            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path
-              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-          </svg>
-        </a>
-        <a href="contact.html" class="text-gray-400 hover:text-gray-500">
-          <span class="sr-only">gmail</span>
-          <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
-            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path
-              d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
-          </svg>
-        </a>
-
-      </div>
-      <p class="text-xs text-[#371f11] text-md leading-6 text-center ">
-        Copyrights
-        @ 2023 - 2024 QINTAR LTD. All rights reserved.
-      </p>
-    </div>
-  </section>
-  </footer>
+    </section>
+    </footer>
 
 
 
